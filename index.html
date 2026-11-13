@@ -13,8 +13,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <title>Deepthink</title>
-  <script type="module" crossorigin src="./assets/index-BS7Td30d.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CzoByuW_.css">
+  <script type="module" crossorigin src="./assets/index-CY1hOEIS.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-_zFsoyQ_.css">
 </head>
 <body data-pal="0">
 <div id="app">
@@ -33,7 +33,7 @@
   </svg>
   <header class="hd over">
     <span id="cnt"></span>
-    <svg id="bee" role="button" aria-label="Changer de couleurs" width="52" height="36" viewBox="0 0 100 68">
+    <svg id="bee" role="button" aria-label="Changer de couleurs" width="104" height="72" viewBox="0 0 100 68">
       <g class="ln"><path d="M36 3.5L44.5 6.2L47.5 12.5"/><path d="M64 3.5L55.5 6.2L52.5 12.5"/></g>
       <path d="M49 29.3C36 24 16 11.5 9.5 14.5C5 20 21 30.5 49 29.8Z" fill="#A9A9AD"/><path d="M51 29.3C64 24 84 11.5 90.5 14.5C95 20 79 30.5 51 29.8Z" fill="#A9A9AD"/>
       <path d="M47.5 30.2C39 30 27.5 31 25.5 35.5C26.5 40.5 36 39.5 47.5 30.2Z" fill="#BDBDBF"/><path d="M52.5 30.2C61 30 72.5 31 74.5 35.5C73.5 40.5 64 39.5 52.5 30.2Z" fill="#BDBDBF"/>
@@ -51,7 +51,7 @@
   <div class="form">
     <div class="lb" id="nL">Question du jour</div>
     <div class="sf" id="nQ"></div>
-    <input class="fi" id="nQI" type="text" autocomplete="off" placeholder="Ta question">
+    <textarea class="fi" id="nQI" rows="1" autocomplete="off" placeholder="Ta question"></textarea>
     <div class="lb gap" id="nA">Nom de l'alvéole</div>
     <input class="fi" id="nI" type="text" autocomplete="off" maxlength="24">
     <div class="er" id="nE"></div>
@@ -72,10 +72,10 @@
 <!-- Puits -->
 <section class="vw" id="vT" hidden>
   <header class="hd"><span class="bk" id="bT" role="button">‹ Carte</span><span class="tm">10:00</span></header>
-  <div class="tt"><span id="tT"></span><span class="fin ses" id="fT" role="button">Terminer</span></div>
-  <svg id="sT" viewBox="0 0 300 350" preserveAspectRatio="xMidYMin meet"></svg>
+  <div class="tt"><input class="ttl" id="tT" type="text" autocomplete="off" maxlength="22" aria-label="Nom de l'idée"><span class="fin ses" id="fT" role="button">Terminer</span></div>
+  <div id="sT" class="well"></div>
   <div class="er pad" id="pE"></div>
-  <div class="row" id="pRow"><input class="fi" id="pI" type="text" autocomplete="off" maxlength="24" placeholder="Pourquoi ?"><span class="fin" id="pG" role="button">Descendre</span></div>
+  <div class="row" id="pRow"><textarea class="fi" id="pI" rows="1" autocomplete="off" placeholder="Pourquoi ?"></textarea><span class="fin" id="pG" role="button">Descendre</span></div>
 </section>
 
 <!-- Clôture -->
@@ -99,11 +99,15 @@
 <!-- Fiche de lecture -->
 <section class="vw" id="vF" hidden>
   <header class="hd"><span class="bk" id="bF" role="button">‹ Ruche</span><span id="fN"></span></header>
-  <div class="tt"><input class="ttl" id="fT2" type="text" autocomplete="off" maxlength="24" aria-label="Nom de l'alvéole"><span class="fin" id="fR" role="button">Renommer</span></div>
+  <div class="tt"><input class="ttl" id="fT2" type="text" autocomplete="off" maxlength="24" aria-label="Nom de l'alvéole"></div>
   <div class="pad">
-    <div class="lb" id="fQ"></div>
+    <div class="cr">
+      <label>Ruche<input class="ei" id="fH" type="text" autocomplete="off" maxlength="24"></label>
+      <label id="fGl">Groupe<input class="ei" id="fGr" type="text" autocomplete="off" maxlength="24"></label>
+    </div>
+    <textarea class="ed lb" id="fQ" rows="1" autocomplete="off" placeholder="Ta question" aria-label="Question"></textarea>
     <div class="lb gap" id="fL">Ce que j'en retiens</div>
-    <div class="sf" id="fP"></div>
+    <textarea class="ed sf" id="fP" rows="1" autocomplete="off" placeholder="Aucune phrase retenue pour l'instant." aria-label="Ce que j'en retiens"></textarea>
   </div>
   <svg id="sM" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid meet"></svg>
   <div class="lb ctr" id="fV" role="button">Voir la carte</div>
