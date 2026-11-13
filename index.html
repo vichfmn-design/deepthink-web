@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Deepthink">
+<meta name="theme-color" content="#FAF8F4">
+<meta name="robots" content="noindex">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Deepthink</title>
+  <script type="module" crossorigin src="./assets/index-BS7Td30d.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CzoByuW_.css">
+</head>
+<body data-pal="0">
+<div id="app">
+
+<!-- Ruche -->
+<section class="vw" id="vH">
+  <svg id="hs">
+    <defs>
+      <linearGradient id="gd" gradientUnits="userSpaceOnUse" x1="-320" y1="-320" x2="320" y2="320">
+        <stop offset="0" stop-color="#9C6F14"/><stop offset=".2" stop-color="#D4A93A"/><stop offset=".4" stop-color="#A87A1E"/>
+        <stop offset=".6" stop-color="#E0BC55"/><stop offset=".8" stop-color="#A87A1E"/><stop offset="1" stop-color="#C9993A"/>
+      </linearGradient>
+    </defs>
+    <g id="hg"></g>
+    <polygon id="gh" points="0,-28 24.2,-14 24.2,14 0,28 -24.2,14 -24.2,-14" fill="#C39A3F" fill-opacity=".35" stroke="#B88A2B" style="display:none"/>
+  </svg>
+  <header class="hd over">
+    <span id="cnt"></span>
+    <svg id="bee" role="button" aria-label="Changer de couleurs" width="52" height="36" viewBox="0 0 100 68">
+      <g class="ln"><path d="M36 3.5L44.5 6.2L47.5 12.5"/><path d="M64 3.5L55.5 6.2L52.5 12.5"/></g>
+      <path d="M49 29.3C36 24 16 11.5 9.5 14.5C5 20 21 30.5 49 29.8Z" fill="#A9A9AD"/><path d="M51 29.3C64 24 84 11.5 90.5 14.5C95 20 79 30.5 51 29.8Z" fill="#A9A9AD"/>
+      <path d="M47.5 30.2C39 30 27.5 31 25.5 35.5C26.5 40.5 36 39.5 47.5 30.2Z" fill="#BDBDBF"/><path d="M52.5 30.2C61 30 72.5 31 74.5 35.5C73.5 40.5 64 39.5 52.5 30.2Z" fill="#BDBDBF"/>
+      <polygon class="dk" points="50,11.5 58.6,20 50,29 41.4,20"/>
+      <polygon class="dk" points="50,29 61.6,38.6 61.6,46 50,63.8 38.4,46 38.4,38.6"/>
+      <polygon points="39.6,37.4 50,43.2 60.4,37.4 61.6,38.9 50,45.7 38.4,38.9" fill="#D4AF55"/>
+      <polygon points="41,43.6 50,48.9 59,43.6 59,46.2 50,51.6 41,46.2" fill="#D4AF55"/>
+    </svg>
+  </header>
+</section>
+
+<!-- Création : alvéole, groupe ou ruche -->
+<section class="vw" id="vN" hidden>
+  <header class="hd"><span class="bk" id="bN" role="button">‹ Ruche</span><span></span></header>
+  <div class="form">
+    <div class="lb" id="nL">Question du jour</div>
+    <div class="sf" id="nQ"></div>
+    <input class="fi" id="nQI" type="text" autocomplete="off" placeholder="Ta question">
+    <div class="lb gap" id="nA">Nom de l'alvéole</div>
+    <input class="fi" id="nI" type="text" autocomplete="off" maxlength="24">
+    <div class="er" id="nE"></div>
+    <div class="pills" id="nD"><span class="pl" data-m="5">5 min</span><span class="pl on" data-m="10">10 min</span><span class="pl" data-m="20">20 min</span></div>
+    <div class="ctr"><span class="go" id="nG" role="button">Commencer</span></div>
+  </div>
+</section>
+
+<!-- Constellation -->
+<section class="vw" id="vC" hidden>
+  <header class="hd"><span class="bk" id="bC" role="button">‹ Ruche</span><span class="tm">10:00</span></header>
+  <div class="tt"><span id="tC"></span><span class="fin ses" id="fC" role="button">Terminer</span></div>
+  <div class="lb one" id="mQ"></div>
+  <svg id="sC" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid meet"></svg>
+  <div class="row" id="cRow"><input class="fi" id="cI" type="text" autocomplete="off" maxlength="22" placeholder="Une idée"><span class="fin" id="cG" role="button">Poser</span></div>
+</section>
+
+<!-- Puits -->
+<section class="vw" id="vT" hidden>
+  <header class="hd"><span class="bk" id="bT" role="button">‹ Carte</span><span class="tm">10:00</span></header>
+  <div class="tt"><span id="tT"></span><span class="fin ses" id="fT" role="button">Terminer</span></div>
+  <svg id="sT" viewBox="0 0 300 350" preserveAspectRatio="xMidYMin meet"></svg>
+  <div class="er pad" id="pE"></div>
+  <div class="row" id="pRow"><input class="fi" id="pI" type="text" autocomplete="off" maxlength="24" placeholder="Pourquoi ?"><span class="fin" id="pG" role="button">Descendre</span></div>
+</section>
+
+<!-- Clôture -->
+<section class="vw" id="vE" hidden>
+  <header class="hd"><span class="bk" id="bE" role="button">‹ Carte</span><span></span></header>
+  <div class="form">
+    <div class="sf">Qu'est-ce que j'en retiens ?</div>
+    <input class="fi" id="eI" type="text" autocomplete="off" placeholder="Une phrase">
+    <div class="er" id="eE"></div>
+    <div class="lb">Ce que ça vaut pour moi</div>
+    <div class="sws" id="eS">
+      <div class="sw" role="button"><svg width="40" height="44" viewBox="-22 -24 44 48"><polygon points="0,-20 17.3,-10 17.3,10 0,20 -17.3,10 -17.3,-10"/></svg>Ok</div>
+      <div class="sw" role="button"><svg width="40" height="44" viewBox="-22 -24 44 48"><polygon points="0,-20 17.3,-10 17.3,10 0,20 -17.3,10 -17.3,-10"/></svg>Bon</div>
+      <div class="sw" role="button"><svg width="40" height="44" viewBox="-22 -24 44 48"><polygon points="0,-20 17.3,-10 17.3,10 0,20 -17.3,10 -17.3,-10"/></svg>Très bon</div>
+    </div>
+    <div class="lb sm">L'alvéole prendra cette couleur dans la ruche. Sans note, elle reste claire.</div>
+    <div class="ctr"><span class="go" id="eG" role="button">Ranger dans la ruche</span></div>
+  </div>
+</section>
+
+<!-- Fiche de lecture -->
+<section class="vw" id="vF" hidden>
+  <header class="hd"><span class="bk" id="bF" role="button">‹ Ruche</span><span id="fN"></span></header>
+  <div class="tt"><input class="ttl" id="fT2" type="text" autocomplete="off" maxlength="24" aria-label="Nom de l'alvéole"><span class="fin" id="fR" role="button">Renommer</span></div>
+  <div class="pad">
+    <div class="lb" id="fQ"></div>
+    <div class="lb gap" id="fL">Ce que j'en retiens</div>
+    <div class="sf" id="fP"></div>
+  </div>
+  <svg id="sM" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid meet"></svg>
+  <div class="lb ctr" id="fV" role="button">Voir la carte</div>
+  <div class="pills ctr2" id="fD"><span class="pl" data-m="5">5 min</span><span class="pl on" data-m="10">10 min</span><span class="pl" data-m="20">20 min</span></div>
+  <div class="ctr foot"><span class="go" id="fG" role="button">Reprendre</span></div>
+</section>
+
+</div>
+</body>
+</html>
