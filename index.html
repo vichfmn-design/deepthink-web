@@ -13,8 +13,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <title>Deepthink</title>
-  <script type="module" crossorigin src="./assets/index-DBZbGCsO.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BihxT7N_.css">
+  <script type="module" crossorigin src="./assets/index-CgiogNjd.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DBWPGAWU.css">
 </head>
 <body data-pal="0">
 <div id="app">
@@ -47,14 +47,19 @@
 
 <!-- Création : alvéole, groupe ou ruche -->
 <section class="vw" id="vN" hidden>
-  <header class="hd"><span class="bk" id="bN" role="button">‹ Ruche</span><span></span></header>
+  <header class="hd"><span class="bk" id="bN" role="button">‹ Accueil</span><span></span></header>
   <div class="form">
-    <div class="lb" id="nL">Question du jour</div>
+    <div class="lb" id="nL"></div>
     <div class="sf" id="nQ"></div>
-    <textarea class="fi" id="nQI" rows="1" autocomplete="off" placeholder="Ta question"></textarea>
-    <div class="lb gap" id="nA">Nom de l'alvéole</div>
-    <input class="fi" id="nI" type="text" autocomplete="off" maxlength="24">
+    <div class="lb" id="nA">Titre</div>
+    <div class="cb">
+      <input class="fi" id="nI" type="text" autocomplete="off" maxlength="24">
+      <span id="nM" role="button" aria-label="Titres courants">▾</span>
+    </div>
+    <div class="ops" id="nO" hidden></div>
     <div class="er" id="nE"></div>
+    <div class="lb" id="nS">Sujet de réflexion</div>
+    <textarea class="fi" id="nQI" rows="1" autocomplete="off" placeholder="Ton sujet"></textarea>
     <div class="pills" id="nD"><span class="pl" data-m="5">5 min</span><span class="pl on" data-m="10">10 min</span><span class="pl" data-m="20">20 min</span></div>
     <div class="ctr"><span class="go" id="nG" role="button">Commencer</span></div>
   </div>
@@ -62,7 +67,7 @@
 
 <!-- Constellation -->
 <section class="vw" id="vC" hidden>
-  <header class="hd"><span class="bk" id="bC" role="button">‹ Ruche</span><span class="tm">10:00</span></header>
+  <header class="hd"><span class="bk" id="bC" role="button">‹ Accueil</span><span class="tm">10:00</span></header>
   <div class="tt"><span id="tC"></span><span class="fin ses" id="fC" role="button">Terminer</span></div>
   <div class="lb one" id="mQ"></div>
   <svg id="sC" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid meet"></svg>
@@ -82,32 +87,26 @@
 <section class="vw" id="vE" hidden>
   <header class="hd"><span class="bk" id="bE" role="button">‹ Carte</span><span></span></header>
   <div class="form">
-    <div class="sf">Qu'est-ce que j'en retiens ?</div>
-    <input class="fi" id="eI" type="text" autocomplete="off" placeholder="Une phrase">
-    <div class="er" id="eE"></div>
-    <div class="lb">Ce que ça vaut pour moi</div>
+    <div class="sf">Comment était ma session ?</div>
     <div class="sws" id="eS">
       <div class="sw" role="button"><svg width="40" height="44" viewBox="-22 -24 44 48"><polygon points="0,-20 17.3,-10 17.3,10 0,20 -17.3,10 -17.3,-10"/></svg>Ok</div>
-      <div class="sw" role="button"><svg width="40" height="44" viewBox="-22 -24 44 48"><polygon points="0,-20 17.3,-10 17.3,10 0,20 -17.3,10 -17.3,-10"/></svg>Bon</div>
-      <div class="sw" role="button"><svg width="40" height="44" viewBox="-22 -24 44 48"><polygon points="0,-20 17.3,-10 17.3,10 0,20 -17.3,10 -17.3,-10"/></svg>Très bon</div>
+      <div class="sw" role="button"><svg width="40" height="44" viewBox="-22 -24 44 48"><polygon points="0,-20 17.3,-10 17.3,10 0,20 -17.3,10 -17.3,-10"/></svg>Utile</div>
+      <div class="sw" role="button"><svg width="40" height="44" viewBox="-22 -24 44 48"><polygon points="0,-20 17.3,-10 17.3,10 0,20 -17.3,10 -17.3,-10"/></svg>Très utile</div>
     </div>
-    <div class="lb sm">L'alvéole prendra cette couleur dans la ruche. Sans note, elle reste claire.</div>
     <div class="ctr"><span class="go" id="eG" role="button">Ranger dans la ruche</span></div>
   </div>
 </section>
 
 <!-- Fiche de lecture -->
 <section class="vw" id="vF" hidden>
-  <header class="hd"><span class="bk" id="bF" role="button">‹ Ruche</span><span id="fN"></span></header>
+  <header class="hd"><span class="bk" id="bF" role="button">‹ Accueil</span><span id="fN"></span></header>
   <div class="tt"><input class="ttl" id="fT2" type="text" autocomplete="off" maxlength="24" aria-label="Nom de l'alvéole"></div>
   <div class="pad">
     <div class="cr">
       <label>Ruche<input class="ei" id="fH" type="text" autocomplete="off" maxlength="24"></label>
       <label id="fGl">Groupe<input class="ei" id="fGr" type="text" autocomplete="off" maxlength="24"></label>
     </div>
-    <textarea class="ed lb" id="fQ" rows="1" autocomplete="off" placeholder="Ta question" aria-label="Question"></textarea>
-    <div class="lb gap" id="fL">Ce que j'en retiens</div>
-    <textarea class="ed sf" id="fP" rows="1" autocomplete="off" placeholder="Aucune phrase retenue pour l'instant." aria-label="Ce que j'en retiens"></textarea>
+    <textarea class="ed lb" id="fQ" rows="1" autocomplete="off" placeholder="Ton sujet" aria-label="Sujet de réflexion"></textarea>
   </div>
   <svg id="sM" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid meet"></svg>
   <div class="lb ctr" id="fV" role="button">Voir la carte</div>
