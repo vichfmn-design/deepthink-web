@@ -13,8 +13,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <title>Deepthink</title>
-  <script type="module" crossorigin src="./assets/index-CgiogNjd.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DBWPGAWU.css">
+  <script type="module" crossorigin src="./assets/index-CEF2_GgP.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CYNLfXwl.css">
 </head>
 <body data-pal="0">
 <div id="app">
@@ -65,12 +65,17 @@
   </div>
 </section>
 
-<!-- Constellation -->
+<!-- Constellation : une grande page qu'on parcourt et qu'on zoome comme la ruche -->
 <section class="vw" id="vC" hidden>
-  <header class="hd"><span class="bk" id="bC" role="button">‹ Accueil</span><span class="tm">10:00</span></header>
-  <div class="tt"><span id="tC"></span><span class="fin ses" id="fC" role="button">Terminer</span></div>
-  <div class="lb one" id="mQ"></div>
-  <svg id="sC" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid meet"></svg>
+  <svg id="sC"><g id="cg"></g></svg>
+  <header class="hd over">
+    <span class="bk" id="bC" role="button">‹ Accueil</span>
+    <span class="act"><span class="tm" id="tmC" role="button">10:00</span><span class="fin" id="aC" role="button">Reprendre</span></span>
+  </header>
+  <div class="tt over"><input class="ttl" id="tC" type="text" autocomplete="off" maxlength="24" aria-label="Titre"></div>
+  <div class="lb one over" id="mQ"></div>
+  <div class="grow"></div>
+  <div class="lb ctr over" id="cH"></div>
   <div class="row" id="cRow"><input class="fi" id="cI" type="text" autocomplete="off" maxlength="22" placeholder="Une idée"><span class="fin" id="cG" role="button">Poser</span></div>
 </section>
 
@@ -95,23 +100,6 @@
     </div>
     <div class="ctr"><span class="go" id="eG" role="button">Ranger dans la ruche</span></div>
   </div>
-</section>
-
-<!-- Fiche de lecture -->
-<section class="vw" id="vF" hidden>
-  <header class="hd"><span class="bk" id="bF" role="button">‹ Accueil</span><span id="fN"></span></header>
-  <div class="tt"><input class="ttl" id="fT2" type="text" autocomplete="off" maxlength="24" aria-label="Nom de l'alvéole"></div>
-  <div class="pad">
-    <div class="cr">
-      <label>Ruche<input class="ei" id="fH" type="text" autocomplete="off" maxlength="24"></label>
-      <label id="fGl">Groupe<input class="ei" id="fGr" type="text" autocomplete="off" maxlength="24"></label>
-    </div>
-    <textarea class="ed lb" id="fQ" rows="1" autocomplete="off" placeholder="Ton sujet" aria-label="Sujet de réflexion"></textarea>
-  </div>
-  <svg id="sM" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid meet"></svg>
-  <div class="lb ctr" id="fV" role="button">Voir la carte</div>
-  <div class="pills ctr2" id="fD"><span class="pl" data-m="5">5 min</span><span class="pl on" data-m="10">10 min</span><span class="pl" data-m="20">20 min</span></div>
-  <div class="ctr foot"><span class="go" id="fG" role="button">Reprendre</span></div>
 </section>
 
 </div>
